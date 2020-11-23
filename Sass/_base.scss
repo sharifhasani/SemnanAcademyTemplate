@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    margin: auto;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.back-container {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
