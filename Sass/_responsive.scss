@@ -11,14 +11,6 @@
                     }
                 }
             }
-            .search-box {
-                width: 30%;
-                form {
-                    button {
-                        width: 35px;
-                    }
-                }
-            }
         }
     }
 }
@@ -27,37 +19,82 @@
     .back-container {
         display: block;
     }
-    .navbar {
-        nav {
-            display: none !important;
-        }
-        .responsive-menu-button {
-            display: block !important;
-        }
-        .responsive-nav {
-            display: flex !important;
-            justify-content: space-between;
-            width: 100%;
-            h2 {
-                margin: auto 0;
+    header {
+        .navbar {
+            nav {
+                display: none !important;
+            }
+            .responsive-menu-button {
+                display: block !important;
+            }
+            .responsive-nav {
+                display: flex !important;
+                justify-content: space-between;
+                width: 100%;
+                h2 {
+                    margin: auto 0;
+                }
             }
         }
+        .responsive-menu {
+            z-index: 10;
+            display: block !important;
+        }
     }
-    .responsive-menu {
-        z-index: 10;
-        display: block !important;
+    .landing {
+        .details {
+            display: none !important;
+        }
+    }
+    .main-menu {
+        display: none;
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .landing {
+        .container {
+            form {
+                width: 100%;
+            }
+        }
+    }
+    .banner {
+        flex-direction: column;
+        .half-banner {
+            display: flex;
+            flex-direction: row;
+            width: 100% !important;
+            justify-content: space-between;
+            .half-banner {
+                width: 49% !important;
+                height: 90% !important;
+            }
+        }
+        .full-banner {
+            width: 100% !important;
+        }
+    }
+}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .landing {
+        .container {
+            h1 {
+                font-size: 31px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 400px) {
-    .navbar {
-        .responsive-nav {
-            h2 {
-                font-size: 25px;
+    header {
+        .navbar {
+            height: fit-content !important;
+            .responsive-nav {
+                h2 {
+                    font-size: 25px;
+                }
             }
         }
     }

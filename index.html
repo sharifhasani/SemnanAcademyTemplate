@@ -28,6 +28,10 @@
             <div class="responsive-nav">
                 <a id="menu-icon" onclick="ShowResponsiveMenu(this)" class="zmdi zmdi-menu zmdi-hc-3x responsive-menu-button"></a>
                 <h2>آکادمی دانشگاه سمنان</h2>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success btn-search" data-toggle="modal" data-target="#searchBoxModal">
+                    <i class="zmdi zmdi-search zmdi-hc-2x"></i>
+                </button>
             </div>
             <!-- Start Nav Menu -->
             <nav>
@@ -38,20 +42,59 @@
                     <li><a href="#">تماس با ما</a></li>
                     <li><a href="#">ثبت شکایت</a></li>
                 </ul>
-                <div class="search-box">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="دنبال چی می گردی؟" aria-label="Search">
-                        <button class="btn btn-success my-2 my-sm-0" type="submit">
-                            <i class="zmdi zmdi-search zmdi-hc-1x"></i>
-                        </button>
-                    </form>
+                <div class="user-access">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success"><a href="#">ورود</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#">عضویت</a></button>
+                    </div>
                 </div>
             </nav>
             <!-- End Nav Menu -->
         </div>
-        <!-- Start Resposive menu -->
+        <!-- Start Resposive nav menu -->
         <nav id="responsive-menu" class="responsive-menu">
-            <ul>
+            <ul class="responsive-menu-items" id="accordion">
+                <!-- ------------- start groups link ----------------  -->
+
+                <!-- start Group link item -->
+                <li class="card">
+                    <div class="card-header" id="headingOne">
+                        <a href="#" class="collapsed">
+                            دوره های برنامه نویسی
+                        </a>
+                        <i class="zmdi zmdi-plus" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"></i>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <ul class="card-body">
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- end Group link item -->
+                <!-- start Group link item -->
+                <li class="card">
+                    <div class="card-header" id="headingTwo">
+                        <a href="#" class="collapsed">
+                            دوره های برنامه نویسی
+                        </a>
+                        <i class="zmdi zmdi-plus" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></i>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <ul class="card-body">
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- end Group link item -->
+
+                <!-- ------------- end of groups link ----------------  -->
+
+
+                <!-- ---------------- start default links ---------------  -->
                 <li>
                     <a href="#">صفحه اصلی</a>
                 </li>
@@ -70,14 +113,177 @@
                 <li>
                     <a href="#">درباره ما</a>
                 </li>
+                <!-- ---------------- start default links ---------------  -->
+
             </ul>
         </nav>
-        <!-- End Resposive menu -->
+        <!-- End Resposive nav menu -->
 
+        <!-- Stast search box modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="searchBoxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchBoxModalLabel">دنبال چی می گردی؟</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <form action="#" method="get" class="responsive-search-box">
+                        <input class="form-control" type="text" placeholder="دنبال چی میگردی؟">
+                        <button class="btn btn-success" type="submit">
+                                <i class="zmdi zmdi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End search box modal -->
     </header>
 
+    <div class="landing">
+        <div class="container">
+            <h1>
+                آکادمی انجمن علمی مهندسی کامپیوتر دانشگاه سمنان
+            </h1>
+            <form class="form-inline">
+                <input class="form-control" type="search" title="دنبال چی می گردی؟" placeholder="دنبال چی می گردی؟" aria-label="Search">
+                <button class="btn btn-success" type="submit" title="بگرد">
+                    <i class="zmdi zmdi-search zmdi-hc-2x"></i>
+                </button>
+            </form>
+            <div class="details">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/stat-student.svg" alt="">
+                            <p>60 دانشجو</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/symbol-2.png" alt="">
+                            <p>50 دوره آموزشی</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/stat-teacher.svg" alt="">
+                            <p>10 مدرس برتر دانشگاه</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/symbol-3.png" alt="">
+                            <p>30 مقاله کاربردی</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/symbol.png" alt="">
+                            <p>7 عضو انجمن علمی</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <div class="main-menu">
+        <ul class="container">
+            <!-- start main menu item  -->
+            <li onmouseover="ShowSubMenu('item-1')" onmouseout="HideSubMenu('item-1')">
+                <a class="main-menu-items" href="#">دوره مبانی برنامه نویسی</a>
+                <i class="zmdi zmdi-chevron-down"></i>
+                <div id="item-1" class="main-menu-sub-items">
+                    <!-- Don't change id in this Element -->
+                    <ul id="sub-item-1">
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- End main menu item  -->
+
+            <!-- start main menu item  -->
+            <li onmouseover="ShowSubMenu('item-2')" onmouseout="HideSubMenu('item-2')">
+                <a class="main-menu-items" href="#">دوره مبانی برنامه نویسی</a>
+                <i class="zmdi zmdi-chevron-down"></i>
+                <div id="item-2" class="main-menu-sub-items">
+                    <!-- Don't change id in this Element -->
+                    <ul id="sub-item-2">
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- End main menu item  -->
+
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="banner">
+            <div class="half-banner">
+                <div class="half-banner">
+                    <img src="images/2738.jpg" alt="" srcset="">
+                </div>
+                <div class="half-banner">
+                    <img src="images/2738.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="full-banner">
+                <img src="images/2738.jpg" alt="" srcset="">
+
+            </div>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores recusandae odio deserunt, quam nam ratione eveniet delectus. Neque, ad. Architecto quasi debitis expedita voluptatum ab nobis reiciendis, praesentium quidem ducimus mollitia maiores
+        quam voluptate maxime culpa quis, aspernatur error sunt temporibus dicta doloremque, ea harum suscipit impedit quisquam? Odit fugit eius doloribus officia facilis quia magni, placeat velit laborum fugiat minima eos reprehenderit commodi totam
+        molestiae ex non aut error excepturi sit maxime quod ducimus rem enim? Deleniti pariatur sapiente vitae? Deleniti, dicta? Vero praesentium nostrum cumque et voluptate omnis sint, voluptatibus unde voluptatum, saepe ipsam minima ducimus nulla,
+        reprehenderit nesciunt libero consequatur eaque! Qui dolorum aliquid, unde optio, sit omnis ipsa veritatis eius nemo possimus saepe vero. Aliquid harum necessitatibus dolor a aspernatur dolore magnam ab molestiae, asperiores ut iste earum quod
+        reprehenderit, laboriosam quisquam voluptas perspiciatis nam sed modi iure rerum quia? Ullam pariatur reprehenderit ipsam autem officiis, laborum voluptatibus, illo maiores quod adipisci illum neque iste libero ducimus veritatis similique aliquam.
+        Vero perspiciatis reiciendis asperiores consequatur veniam eos iste modi possimus ut pariatur, neque earum maxime a ab unde repudiandae sit, ullam, quia vel similique. Exercitationem, dolores! Nisi illo voluptates quo, quae deleniti doloribus
+        ullam officiis consequatur molestiae eius mollitia, atque dolor, velit cum quasi natus itaque ducimus sunt adipisci nesciunt necessitatibus nihil. Ad ratione nam aut iste praesentium error velit in minima quasi quod cupiditate nulla neque quisquam
+        natus, similique fuga corrupti sequi, odio ab. Labore ipsam porro id beatae quasi corrupti dolores, explicabo ipsum. Quibusdam, eligendi officia sequi perferendis distinctio labore ullam quia voluptates non incidunt harum neque impedit nesciunt
+        hic perspiciatis dolorem? Minima optio nemo sint soluta maiores reprehenderit pariatur cupiditate repudiandae eius praesentium ratione odit, quo minus dolore incidunt aperiam facilis inventore maxime dolores, fugit architecto delectus quos totam.
+        Perspiciatis ex numquam tenetur doloremque sit aperiam quasi cupiditate, a ad dolore iste saepe aut animi atque in, eaque fugiat quas magni itaque, dolores sed voluptatum fuga doloribus. Similique voluptas, harum voluptates at dolores laboriosam?
+        Commodi ipsum consectetur, deleniti exercitationem dolores libero cumque expedita sint excepturi, eaque modi temporibus inventore numquam iste necessitatibus fuga possimus ducimus, omnis quasi blanditiis nulla optio maxime. Placeat harum inventore
+        aliquam sapiente architecto, nulla qui labore, ullam, iste expedita reiciendis totam doloremque esse voluptatum aliquid repudiandae! At consequatur omnis ullam, dicta corporis quam illum molestiae provident dolore alias inventore autem pariatur
+        architecto, ratione aliquam, quos natus? Modi blanditiis voluptate ducimus. Consequatur quas adipisci magnam illo neque eum amet odit minus maxime voluptates, quasi placeat cupiditate suscipit autem molestiae id animi hic expedita iusto error
+        voluptatibus qui perspiciatis delectus. Ducimus dolore, earum impedit ab libero pariatur eligendi enim? Modi illo amet eligendi maxime, totam consectetur corrupti soluta nemo reprehenderit reiciendis fugiat suscipit quas placeat sint deleniti
+        quibusdam ab fugit ipsum dicta nulla repudiandae cumque mollitia qui accusamus? Quaerat doloribus corrupti assumenda. Nesciunt illum sit quia assumenda reprehenderit repellendus nisi quisquam illo perspiciatis a nam similique nulla rerum repudiandae
+        numquam iste quas cumque minima, ad et incidunt, cum commodi? Enim, sed incidunt, obcaecati suscipit nesciunt necessitatibus maxime nulla asperiores iusto tempora perspiciatis ducimus dolorem non corrupti iure possimus, dolore exercitationem minus.
+        Maxime reiciendis minus aliquid enim magni. Corporis, placeat cum amet aut quod aspernatur nobis, voluptates modi, deleniti totam facere reprehenderit distinctio eum? Molestiae, deleniti. Illo saepe vitae fugiat iste, aliquam recusandae! Alias
+        omnis architecto suscipit aut minus, unde impedit nisi consequuntur repellendus quae doloremque reiciendis amet, nihil doloribus. Pariatur fugit quia deserunt assumenda nisi, eveniet et libero itaque provident nemo perferendis accusamus, dolore
+        totam. Cupiditate necessitatibus, eaque inventore debitis atque, ducimus tempore itaque, at ullam consequatur maxime ad. Porro necessitatibus mollitia distinctio temporibus dolorem, voluptates architecto, quis similique et adipisci sapiente, omnis
+        velit. Veritatis, libero? Labore corporis laudantium, impedit dolore provident voluptas obcaecati explicabo itaque, tempore fuga architecto perspiciatis ab officia iusto placeat asperiores? Ipsam suscipit ex, aliquid, accusamus recusandae impedit
+        consequatur minima assumenda et in architecto laborum dolore earum exercitationem. Vero vel doloremque veritatis porro, nulla nostrum similique illum ducimus minima quam reiciendis autem. Temporibus quaerat ullam perferendis quo praesentium commodi
+        maiores odit deserunt delectus molestiae exercitationem, impedit veniam autem aut quas ipsa laudantium inventore fuga, non earum debitis consequatur adipisci excepturi aperiam? Doloribus numquam natus, rerum saepe vitae reprehenderit commodi recusandae
+        iste accusantium maiores modi accusamus unde et molestias sunt illum architecto deleniti, ex omnis fugiat minus, hic libero beatae? Sed architecto, placeat doloribus necessitatibus beatae aspernatur quos veritatis nobis ut reprehenderit incidunt,
+        culpa atque assumenda commodi ad hic! Tempora amet exercitationem ducimus iure perspiciatis eum voluptatibus itaque. Debitis qui dignissimos, iste voluptatibus cum explicabo deserunt, amet porro autem illo suscipit voluptatum et reprehenderit
+        aspernatur ratione possimus consequuntur velit nemo voluptates mollitia commodi blanditiis quis. Explicabo unde deserunt ratione harum obcaecati, tempore fugiat dignissimos. Fugiat incidunt unde doloremque optio nemo illo beatae animi rerum. Minus
+        recusandae quasi esse perspiciatis sunt natus sequi dolores repellat iure necessitatibus ducimus incidunt, eaque laboriosam consectetur quisquam illum tenetur quam dignissimos facilis iusto eos repellendus! Vitae quasi rem quae culpa illo ex quisquam
+        perspiciatis, quos natus impedit, temporibus sunt reiciendis voluptas iste dolorem optio explicabo nostrum numquam. Cupiditate facilis ducimus ab id nemo aut quis aliquid quidem distinctio optio? Ratione sit maxime quia adipisci laudantium eveniet,
+        nostrum neque voluptate placeat suscipit officia consequuntur voluptatibus, necessitatibus minus? Fuga qui tenetur perspiciatis est iusto. Deleniti consectetur quis neque rerum iure ex voluptatem expedita magni nulla dolore maxime provident, quidem
+        odio! Maiores, nulla. Eum, necessitatibus rerum.</p>
+
+
+
+
+    <!-- custom js  -->
     <script src="js/index.js"></script>
+
+    <!-- Bootstrap js and Jquery -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

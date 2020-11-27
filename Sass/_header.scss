@@ -10,6 +10,9 @@ header {
         }
         .responsive-nav {
             display: none;
+            .btn-search {
+                border-radius: 50px;
+            }
         }
         nav {
             width: 100%;
@@ -36,24 +39,12 @@ header {
                 }
             }
         }
-        .search-box {
-            width: 35%;
-            margin: auto 0;
-            display: flex;
-            justify-content: flex-end;
-            form {
-                width: 100%;
-                input {
-                    width: 80%;
-                    margin: 0 !important;
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
-                }
+        .user-access {
+            .btn-group {
                 button {
-                    border-top-right-radius: 0;
-                    border-bottom-right-radius: 0;
-                    width: 20%;
-                    height: 38px;
+                    a {
+                        color: white;
+                    }
                 }
             }
         }
@@ -70,15 +61,118 @@ header {
         top: 60px;
         transition: 0.5s;
         overflow: scroll;
-        ul {
-            text-align: center;
-            padding: 5%;
+        .responsive-menu-items {
             li {
                 margin: 10% 0%;
-                a {
+                @include a-color-attribute();
+                i {
                     color: white;
-                    &:hover {
-                        color: #4CAF50;
+                }
+            }
+            text-align: center;
+            padding: 5%;
+            .card {
+                background-color: black;
+                .card-header {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 0 !important;
+                    i {
+                        padding: 4px;
+                        border: 1px solid white;
+                    }
+                }
+                .collapse {
+                    .card-body {
+                        li {
+                            @include a-color-attribute(#4FC3F7, #BA68C8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .responsive-search-box {
+        padding: 5%;
+        display: flex;
+        input {
+            width: 80%;
+            margin-left: 0 !important;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:focus {
+                border: #424242;
+            }
+        }
+        button {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            width: 20%;
+        }
+    }
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    background-image: url(..\\images\\landing-2.jpg);
+    background-size: cover;
+    background-position: left;
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            color: white;
+            text-shadow: 0px 4px 9px #C5CAE9;
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            transition: all 0.5s;
+            input {
+                margin: 0 !important;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                height: 50px;
+                width: 80%;
+            }
+            button {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                height: 50px;
+                width: 20%;
+            }
+        }
+        .details {
+            display: block;
+            width: 80%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    a {
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: #03A9F4;
+                        }
+                        img {
+                            height: 72px;
+                        }
+                        p {
+                            margin-top: 1rem;
+                            margin-bottom: 0 !important;
+                        }
                     }
                 }
             }

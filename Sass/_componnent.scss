@@ -1,2 +1,12 @@
 $first-gradient-ns:rgb(246, 79, 89);
 $first-gradient: linear-gradient(90deg, rgba(246, 79, 89, 1) 0%, rgba(196, 113, 237, 1) 50%, rgba(18, 194, 233, 1) 100%);
+$secondery-gradient-ns: rgb(252, 0, 255);
+$secondery-gradient: linear-gradient(90deg, rgba(252, 0, 255, 1) 0%, rgba(0, 219, 222, 1) 100%);
+@mixin a-color-attribute($first-color :white, $hover-color:#4CAF50) {
+    a {
+        color: $first-color !important;
+        &:hover {
+            color: $hover-color !important;
+        }
+    }
+}
