@@ -1,0 +1,81 @@
+@import "componnent";
+.last-course-title {
+    display: flex;
+    justify-content: center;
+    h1 {
+        font-size: 32px;
+    }
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .course-box {
+        box-shadow: 0px 0px 5px #BDBDBD;
+        border-radius: 10px;
+        margin: 5% 0.01%;
+        height: 330px;
+        max-height: 330px;
+        width: 100%;
+        // background-color: brown;
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 60%;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        .course-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 35%;
+            margin: 0% 0 !important;
+            .top {
+                width: 90%;
+                padding: 2%;
+                border-bottom: 2px solid #424242;
+                .title {
+                    margin: 4px 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    @include a-color-attribute(#424242, #03A9F4);
+                    a {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                .details {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 0;
+                    @include a-color-attribute(#9E9E9E, #2196F3);
+                    a {
+                        font-size: 14px;
+                    }
+                    .comment {
+                        color: #9E9E9E;
+                    }
+                }
+            }
+            .bottom {
+                margin: 10px 0;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                .time {
+                    color: #03A9F4;
+                }
+                .price {
+                    color: #4CAF50;
+                }
+            }
+        }
+    }
+}

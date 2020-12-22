@@ -5,6 +5,7 @@ $secondery-gradient: linear-gradient(90deg, rgba(252, 0, 255, 1) 0%, rgba(0, 219
 @mixin a-color-attribute($first-color :white, $hover-color:#4CAF50) {
     a {
         color: $first-color !important;
+        transition: 0.3s;
         &:hover {
             color: $hover-color !important;
         }
