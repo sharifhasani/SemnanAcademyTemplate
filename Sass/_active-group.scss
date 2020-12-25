@@ -1,0 +1,68 @@
+@import "componnent";
+.active-group {
+    width: 100%;
+    margin: 30px 0;
+    .active-group-title {
+        display: flex;
+        justify-content: center;
+        h2 {
+            margin: 25px 0;
+            position: relative;
+            &::before {
+                width: 2000px;
+                height: 5px;
+                border-radius: 25px;
+                background-color: aqua;
+                right: -1990px;
+                top: 9px;
+            }
+        }
+    }
+    .groups {
+        border-radius: 5px;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        .buttons {
+            overflow-y: auto;
+            width: 19%;
+            background-color: #F5F5F5;
+            border-radius: 5px;
+            .nav-link {
+                transition: 0.3s;
+                color: #00C853;
+                &:hover {
+                    padding: 8px 25px;
+                }
+            }
+            .active {
+                color: #fff;
+                background-color: #00C853;
+            }
+        }
+        .tab-content {
+            border-radius: 5px;
+            width: 79%;
+            height: 300px;
+            overflow-y: auto;
+            background-color: #F5F5F5;
+            .tab-pane {
+                width: 100%;
+                ul {
+                    padding: 2px 10px;
+                    li {
+                        @include a-color-attribute(#424242, #03A9F4);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 10px 0px;
+                        transition: 0.3s;
+                        &:hover {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

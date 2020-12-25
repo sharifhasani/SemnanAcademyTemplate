@@ -60,6 +60,14 @@
     .main-menu {
         display: none;
     }
+    .footer {
+        .container {
+            .logo {
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -86,9 +94,30 @@
             width: 100% !important;
         }
     }
+    .active-group {
+        .groups {
+            flex-direction: column;
+            .buttons {
+                width: 100% !important;
+                flex-direction: row !important;
+            }
+            .tab-content {
+                width: 100% !important;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
+    header {
+        .navbar {
+            .responsive-nav {
+                h2 {
+                    font-size: 110%;
+                }
+            }
+        }
+    }
     .landing {
         .container {
             h1 {
@@ -105,6 +134,11 @@
                     align-items: center;
                 }
             }
+        }
+    }
+    .footer {
+        .container {
+            flex-direction: column;
         }
     }
 }
