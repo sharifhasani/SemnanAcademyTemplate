@@ -49,3 +49,16 @@ function HideSubMenu(elementId) {
     document.getElementById(elementId).style.opacity = "0.8";
     document.getElementById("sub-" + elementId).style.display = "none";
 }
+
+function ShowDescription(elementId) {
+    let element = document.getElementById(elementId);
+
+    if (element.style.height == "") {
+        element.style.visibility = "hidden";
+        element.style.height = "0px";
+    } else {
+        element.style.visibility = "visible";
+        element.style.height = "fit-content";
+
+    }
+}

@@ -1,3 +1,4 @@
+@import "componnent";
 * {
     margin: 0;
     padding: 0;
@@ -24,4 +25,12 @@ li {
     top: 60px;
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
+}
+
+.breadcrumb {
+    background-color: transparent;
+    .breadcrumb-item,
+    .active {
+        @include a-color-attribute(#889296, #2196F3);
+    }
 }
