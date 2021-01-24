@@ -239,10 +239,10 @@
 
 
     <!-- Start Show Course Detail -->
-    <main class="container d-sm-block d-lg-flex">
+    <main class="main-content container d-sm-block d-lg-flex">
         <div class="panel course col-lg-8 col-md-12">
             <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav panel-header nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-home" aria-selected="true">توضیحات دوره</a>
                     <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-episodes" role="tab" aria-controls="nav-profile" aria-selected="false">جلسات دوره</a>
                     <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-comments" role="tab" aria-controls="nav-contact" aria-selected="false">
@@ -454,11 +454,20 @@
                     </div>
                 </div>
                 <!-- End Course Episode -->
+
+                <!-- Start Comment Course -->
                 <div class="tab-pane comments fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <div class="title">
                         <h2>
                             <i class="fa fa-comment"></i> نظرات دوره
                         </h2>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#commentModal">
+                            ثبت دیدگاه شما
+                        </button>
+
+
                         <span class="badge badge-pill bg-primary">
                             <i class="fa fa-comments"></i>
                             10
@@ -595,11 +604,190 @@
                             </ul>
                         </li>
                     </ul>
+                    <div class="paging">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">قبلش</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">بعدش</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
+                <!-- End Comment Course -->
+
+                <!-- Start Question Course -->
+                <div class="tab-pane question-course fade" id="nav-question" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="title">
+                        <h2>
+                            <i class="fa fa-question"></i> پرسش و پاسخ های دوره
+                        </h2>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#commentModal">
+                            پرسش سوال
+                        </button>
+
+                        <span class="badge badge-pill bg-primary">
+                            <i class="fa fa-question-square"></i>
+                            10
+                        </span>
+                    </div>
+                    <ul class="questions">
+                        <li class="question shadow">
+                            <div class="image">
+                                <img class=" img-thumbnail" src="images/comment-image.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <a href="#" type="button" class=" question-title" data-toggle="modal" data-target="#questionModal">
+                                    نحوه پابلیش کردن پروژه با داکر
+                                </a>
+                                <ul class="detail">
+                                    <li class="detail-item">آموزش ASP.NET Core</li>
+                                    <li class="detail-item">12/10/1399</li>
+                                    <li class="detail-item">10 بازدید</li>
+                                    <li class="detail-item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="question shadow">
+                            <div class="image">
+                                <img class=" img-thumbnail" src="images/comment-image.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <a href="#" type="button" class=" question-title" data-toggle="modal" data-target="#questionModal">
+                                    نحوه پابلیش کردن پروژه با داکر
+                                </a>
+                                <ul class="detail">
+                                    <li class="detail-item">آموزش ASP.NET Core</li>
+                                    <li class="detail-item">12/10/1399</li>
+                                    <li class="detail-item">10 بازدید</li>
+                                    <li class="detail-item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="question shadow">
+                            <div class="image">
+                                <img class=" img-thumbnail" src="images/comment-image.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <a href="#" type="button" class=" question-title" data-toggle="modal" data-target="#questionModal">
+                                    نحوه پابلیش کردن پروژه با داکر
+                                </a>
+                                <ul class="detail">
+                                    <li class="detail-item">آموزش ASP.NET Core</li>
+                                    <li class="detail-item">12/10/1399</li>
+                                    <li class="detail-item">10 بازدید</li>
+                                    <li class="detail-item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="question shadow">
+                            <div class="image">
+                                <img class=" img-thumbnail" src="images/comment-image.jpg" alt="" srcset="">
+                            </div>
+                            <div class="info">
+                                <a href="#" type="button" class=" question-title" data-toggle="modal" data-target="#questionModal">
+                                    نحوه پابلیش کردن پروژه با داکر
+                                </a>
+                                <ul class="detail">
+                                    <li class="detail-item">آموزش ASP.NET Core</li>
+                                    <li class="detail-item">12/10/1399</li>
+                                    <li class="detail-item">10 بازدید</li>
+                                    <li class="detail-item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="paging">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">قبلش</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">بعدش</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- End Question Course -->
+
             </div>
         </div>
-        <div class="panel course-detail col-lg-4 col-md-12">
 
+        <div class="col-lg-4 col-md-12">
+            <div class="panel course-detail">
+
+                <div class="panel-header">
+                    <div class="price border-bottom border-3">
+                        <i class="zmdi zmdi-money"></i>
+                        <p class="content">
+                            هزینه دوره :
+                        </p>
+                        <p class="mony-count">
+                            رایگانـــــــ
+                        </p>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <ul class="detail-items">
+                        <li class="item">
+                            <i class="zmdi zmdi-account"></i> مدرس دوره :
+                            <span>شریف حسنی</span>
+                            <a href="#">(رزومه)</a>
+                        </li>
+                        <li class="item">
+                            <i class="zmdi zmdi-accounts"></i> تعداد دانشجویان دوره :
+                            <span>120</span>
+                        </li>
+                        <li class="item">
+                            <i class="zmdi zmdi-videocam"></i> تعداد ویدئو ها :
+                            <span>10</span>
+                        </li>
+                        <li class="item">
+                            <i class="zmdi zmdi-time"></i> مدت زمان دوره :
+                            <span>12:30:00</span>
+                        </li>
+                        <li class="item">
+                            <i class="zmdi zmdi-star"></i> سطح دوره :
+                            <span>
+                            متوسط
+                            <i class="zmdi zmdi-star text-warning"></i>
+                            <i class="zmdi zmdi-star text-warning"></i>
+                            <i class="zmdi zmdi-star-border text-warning"></i>
+                        </span>
+                        </li>
+                        <li class="item">
+                            <i class="zmdi zmdi-info"></i> وضعیت دوره :
+                            <span class="text-primary">درحال برگزاری</span>
+                        </li>
+                        <li class="item">
+                            <i class="zmdi zmdi-calendar"></i> تاریخ آخرین بروزرسانی دوره :
+                            <span>1399/11/25</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-success btn-block buy-course">
+                    ثبت نام و خریداری دوره
+                </button>
+                </div>
+            </div>
+
+            <div class="panel course-tags">
+                <div class="panel-header">
+                    <i class="zmdi zmdi-tag"></i> برچسب ها :
+                </div>
+                <div class="panel-content">
+                    <a href="#">آموزش برنامه نویسی</a>
+                    <a href="#">آموزش برنامه نویسی</a>
+                    <a href="#">آموزش برنامه نویسی</a>
+                    <a href="#">آموزش برنامه نویسی</a>
+                    <a href="#">آموزش برنامه نویسی</a>
+                </div>
+            </div>
         </div>
     </main>
     <!-- End Show Course Detail -->
@@ -670,7 +858,159 @@
     <!-- End Footer -->
 
 
+    <!-- Comment Modal -->
+    <div class="modal fade" id="commentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">ثبت دیدگاه ارزشمند شما . . .</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="comment" id="" cols="30" rows="10">نظر خود را ثبت کنید</textarea>
 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+                    <button type="button" class="btn btn-success">ثبت</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Question Modal -->
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="questionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="questionModalLabel">نحوه پابلیش کردن پروژه با داکر</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fa fa-times-circle"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="question shadow">
+                        <div class="question-header">
+                            <ul class="header-items">
+                                <li class="item">12/10/1399</li>
+                                <li class="item">10 بازدید</li>
+                                <li class="item">5 پاسخ</li>
+                            </ul>
+                        </div>
+                        <div class="question-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur nesciunt.
+                                Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                        </div>
+                        <div class="question-footer">
+                            <div class="image">
+                                <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                            </div>
+                            <span>
+                                شریف حسنی
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="answers">
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">بازگشت</button>
+                    <button type="button" class="btn btn-success">ثبت پاسخ</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- custom js  -->

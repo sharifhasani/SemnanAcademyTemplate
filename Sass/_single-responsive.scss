@@ -4,6 +4,11 @@
 @media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
+    .banner {
+        .full-banner {
+            height: 50%;
+        }
+    }
     .course {
         .tab-content {
             .episodes {
@@ -43,11 +48,20 @@
                         .author-info {
                             padding-left: 10px;
                             .info {
-                                flex-direction: row;
+                                flex-direction: column;
                                 p {
                                     display: none;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+            .question-course {
+                .questions {
+                    .question {
+                        .image {
+                            display: none;
                         }
                     }
                 }
