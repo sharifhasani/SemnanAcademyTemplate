@@ -1,0 +1,54 @@
+@import "../defaultStyle/componnent";
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .panel {
+        border-radius: 15px;
+        width: 80%;
+        .login-form {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url('../../images/login-form-image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+            &:before {
+                z-index: -10;
+                content: "";
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 600;
+                border-bottom: 2px solid #BDBDBD;
+                margin-bottom: 10px;
+            }
+            .login-inputs {
+                width: 100%;
+                .input {
+                    width: 100%;
+                    margin: 10px 0;
+                    label {
+                        font-size: 90%;
+                    }
+                }
+            }
+        }
+        .login-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

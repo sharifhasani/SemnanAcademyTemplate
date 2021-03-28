@@ -1,0 +1,73 @@
+@import "../defaultStyle/componnent";
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        .full-banner {
+            height: 50%;
+        }
+    }
+    .course {
+        .tab-content {
+            .episodes {
+                .episode-items {
+                    .item {
+                        margin: 10px 5px;
+                        padding: 0;
+                        .item-content {
+                            .video-access {
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .comments {
+                .all-comment {
+                    .comment {
+                        .author-info {
+                            flex-direction: column;
+                            .info {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .course {
+        .tab-content {
+            .comments {
+                .all-comment {
+                    margin: 10px;
+                    .comment {
+                        .author-info {
+                            padding-left: 10px;
+                            .info {
+                                flex-direction: column;
+                                p {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .question-course {
+                .questions {
+                    .question {
+                        .image {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {}

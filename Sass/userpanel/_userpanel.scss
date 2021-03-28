@@ -1,0 +1,50 @@
+@import "../defaultStyle/componnent";
+.main-content {
+    .user-info {
+        .user-access {
+            .panel-header {
+                background-color: #E8EAF6;
+                padding: 10px 0px;
+                img {
+                    @include user-image(128px, 128px, 100px);
+                    margin: 5px 0;
+                }
+            }
+            .panel-content {
+                .detail-items {
+                    padding: 0;
+                    .item {
+                        margin: 10px 0;
+                        @include a-color-attribute(#424242, #03A9F4);
+                        a {
+                            display: flex;
+                            align-items: center;
+                            i {
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dashboard-panel {
+        .panel {
+            .panel-header {
+                display: flex;
+                justify-content: start;
+                padding: 10px 0;
+                font-weight: 600;
+                width: 100%;
+                border-bottom: 1px solid #E0E0E0;
+                h2 {
+                    width: 100%;
+                    padding: 0 20px;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

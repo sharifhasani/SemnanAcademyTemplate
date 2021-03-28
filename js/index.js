@@ -62,3 +62,14 @@ function ShowDescription(elementId) {
 
     }
 }
+
+//#region Copy text To Clipboard
+var clipboard = new ClipboardJS('.shortLink');
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+
+//#endregion

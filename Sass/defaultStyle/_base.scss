@@ -7,6 +7,7 @@
 body {
     direction: rtl;
     margin: auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -28,6 +29,7 @@ li {
 }
 
 .breadcrumb {
+    margin: 10px;
     background-color: transparent;
     .breadcrumb-item,
     .active {

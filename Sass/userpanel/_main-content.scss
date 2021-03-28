@@ -1,0 +1,53 @@
+@import "../defaultStyle/componnent";
+.back-container {
+    top: 100px;
+}
+
+header {
+    .responsive-menu {
+        top: 100px !important;
+    }
+    .navbar {
+        background-image: url('../images/landing-2.jpg');
+        height: 100px;
+        .responsive-nav {
+            h2,
+            a {
+                color: #F5F5F5;
+            }
+        }
+        nav {
+            ul {
+                li {
+                    @include a-color-attribute(#EEEEEE,
+                    #C5E1A5);
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.course-page-header {
+    .title {
+        h1 {
+            font-size: 25px;
+        }
+    }
+    .short-link {
+        height: fit-content;
+        padding: 15px 0px;
+        div,
+        a {
+            padding: 0px 20px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+        }
+    }
+}

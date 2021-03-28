@@ -1,0 +1,512 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iran Sans Font -->
+    <link rel="stylesheet" href="fonts/css/style.css">
+
+    <!-- Bootstrap Style  -->
+    <link rel="stylesheet" href="Style/bootstrap-rtl/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-mUkCBeyHPdg0tqB6JDd+65Gpw5h/l8DKcCTV2D2UpaMMFd7Jo8A+mDAosaWgFBPl" crossorigin="anonymous">
+
+    <!-- ZMDI Icons -->
+    <link rel="stylesheet" href="Style/ZMDI/css/material-design-iconic-font.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Style/FontAwesome/css/fontawesome-all.min.css">
+
+    <link rel="stylesheet" href="Style/userpanel.min.css">
+    <!-- Clipboard Utility -->
+    <script src="js/clipboard.min.js"></script>
+
+    <title>آکادمی دانشگاه سمنان</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="responsive-nav">
+                <a id="menu-icon" onclick="ShowResponsiveMenu(this)" class="zmdi zmdi-menu zmdi-hc-3x responsive-menu-button"></a>
+                <h2>آکادمی دانشگاه سمنان</h2>
+                <!-- Button trigger modal -->
+
+                <div class="user-access">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <!-- <button type="button" class="btn btn-warning"><a href="#">شریف حسنی عزیز خوش آمدید!</a></button> -->
+                        <button type="button" class="btn btn-warning"><a href="#">ورود</a></button>
+                        <button type="button" class="btn btn-danger"><a href="#">عضویت</a></button>
+                        <button type="button" class="btn btn-success btn-search" data-toggle="modal" data-target="#searchBoxModal">
+                            <i class="zmdi zmdi-search zmdi-hc-2x"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Start Nav Menu -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/logo.jpg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">دوره های انجمن</a></li>
+                    <li><a href="#">درباره انجمن علمی</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">ثبت شکایت</a></li>
+                </ul>
+                <div class="user-access">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <!-- <button type="button" class="btn btn-success"><a href="#">شریف حسنی عزیز خوش آمدید!</a></button> -->
+                        <button type="button" class="btn btn-success"><a href="#">ورود</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#">عضویت</a></button>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Nav Menu -->
+        </div>
+        <!-- Start Resposive menu -->
+        <nav id="responsive-menu" class="responsive-menu">
+            <ul class="responsive-menu-items" id="accordion">
+                <!-- ------------- start groups link ----------------  -->
+
+                <!-- start Group link item -->
+                <li class="card">
+                    <div class="card-header" id="headingOne">
+                        <a href="#" class="collapsed">
+                            دوره های برنامه نویسی
+                        </a>
+                        <i class="zmdi zmdi-plus" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"></i>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <ul class="card-body">
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- end Group link item -->
+                <!-- start Group link item -->
+                <li class="card">
+                    <div class="card-header" id="headingTwo">
+                        <a href="#" class="collapsed">
+                            دوره های برنامه نویسی
+                        </a>
+                        <i class="zmdi zmdi-plus" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></i>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <ul class="card-body">
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                            <li><a href="#">دوره اول</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- end Group link item -->
+
+                <!-- ------------- end of groups link ----------------  -->
+
+
+                <!-- ---------------- start default links ---------------  -->
+                <li>
+                    <a href="#">صفحه اصلی</a>
+                </li>
+                <li>
+                    <a href="#">آموزش ها</a>
+                </li>
+                <li>
+                    <a href="#">کسب درآمد</a>
+                </li>
+                <li>
+                    <a href="#">پنل سازمانی</a>
+                </li>
+                <li>
+                    <a href="#">تماس با ما</a>
+                </li>
+                <li>
+                    <a href="#">درباره ما</a>
+                </li>
+                <!-- ---------------- start default links ---------------  -->
+
+            </ul>
+        </nav>
+        <!-- End Resposive menu -->
+
+        <!-- Stast search box modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="searchBoxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchBoxModalLabel">دنبال چی می گردی؟</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <form action="#" method="get" class="responsive-search-box">
+                        <input class="form-control" type="text" placeholder="دنبال چی میگردی؟">
+                        <button class="btn btn-success" type="submit">
+                                <i class="zmdi zmdi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End search box modal -->
+    </header>
+
+    <!-- Start navbar main menu -->
+    <div class="main-menu">
+        <ul class="container">
+            <!-- start main menu item  -->
+            <li onmouseover="ShowSubMenu('item-1')" onmouseout="HideSubMenu('item-1')">
+                <a class="main-menu-items" href="#">دوره مبانی برنامه نویسی</a>
+                <i class="zmdi zmdi-chevron-down"></i>
+                <div id="item-1" class="main-menu-sub-items">
+                    <!-- Don't change id in this Element -->
+                    <ul id="sub-item-1">
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- End main menu item  -->
+            <!-- start main menu item  -->
+            <li onmouseover="ShowSubMenu('item-2')" onmouseout="HideSubMenu('item-2')">
+                <a class="main-menu-items" href="#">دوره مبانی برنامه نویسی</a>
+                <i class="zmdi zmdi-chevron-down"></i>
+                <div id="item-2" class="main-menu-sub-items">
+                    <!-- Don't change id in this Element -->
+                    <ul id="sub-item-2">
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                        <li><a href="#">پایتون</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- End main menu item  -->
+        </ul>
+    </div>
+    <!-- End navbar main menu -->
+
+
+    <!-- Start Course Header , Title , Short Link -->
+    <div class="course-page-header container d-lg-flex justify-content-between">
+        <div class="title">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
+                    <li class="breadcrumb-item"><a href="#">دوره های انجمن</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">برنامه نویسی وب</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- End Course Header , Title , Short Link -->
+
+
+    <!-- Start Show Course Detail -->
+    <main class="main-content container d-sm-block d-lg-flex">
+        <div class="col-lg-3 col-md-12 user-info">
+            <div class="panel user-access">
+                <div class="panel-header">
+                    <div class="img-profile d-flex flex-column align-content-center justify-content-center">
+                        <img class="img-fluid img-thumbnail" src="images/comment-image.jpg" alt="" srcset="">
+                        <span class="d-flex justify-content-center">شریف حسنی</span>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <ul class="detail-items">
+                        <li class="item">
+                            <a href="#">
+                                <i class="zmdi zmdi-plus"></i> مشاهده کیف پول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class="zmdi zmdi-plus"></i> مشاهده کیف پول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class="zmdi zmdi-plus"></i> مشاهده کیف پول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class="zmdi zmdi-plus"></i> مشاهده کیف پول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class="zmdi zmdi-plus"></i> مشاهده کیف پول
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <i class="zmdi zmdi-close"></i> خروج از حساب کاربری
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-success btn-block buy-course">
+                    ثبت نام و خریداری دوره
+                </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-12 dashboard-panel">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2> اطلاعات حساب کاربری</h2>
+                </div>
+                <div class="panel-content">
+                    <div class="alert alert-danger">
+                        alert
+                    </div> access
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- End Show Course Detail -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-4 links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="zmdi zmdi-plus-square"></i> دانشگاه سمنان
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="zmdi zmdi-plus-square"></i> دانشگاه سمنان
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="zmdi zmdi-plus-square"></i> دانشگاه سمنان
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="zmdi zmdi-plus-square"></i> دانشگاه سمنان
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 social-links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="zmdi zmdi-instagram"></i> صفحه اینستاگرام انجمن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="zmdi zmdi-share"></i> کانال تلگرام انجمن
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 logo">
+                <div class="item">
+                    <img src="images/logo.jpg" alt="" srcset="">
+                </div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <div class="owner">
+                    تمامی حقوق مادی و معنوی این سایت متعلق به
+                    <a href="#">انجمن علمی مهندسی کامپیوتر دانشگاه سمنان</a> می باشد.
+                </div>
+                <div class="developer">
+                    طراحی و توسعه توسط گروه برنامه نویسی
+                    <a href="#">رسا</a> .
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Comment Modal -->
+    <div class="modal fade" id="commentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">ثبت دیدگاه ارزشمند شما . . .</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="comment" id="" cols="30" rows="10">نظر خود را ثبت کنید</textarea>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">انصراف</button>
+                    <button type="button" class="btn btn-success">ثبت</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Question Modal -->
+    <div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="questionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="questionModalLabel">نحوه پابلیش کردن پروژه با داکر</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fa fa-times-circle"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="question shadow">
+                        <div class="question-header">
+                            <ul class="header-items">
+                                <li class="item">12/10/1399</li>
+                                <li class="item">10 بازدید</li>
+                                <li class="item">5 پاسخ</li>
+                            </ul>
+                        </div>
+                        <div class="question-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur nesciunt.
+                                Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                        </div>
+                        <div class="question-footer">
+                            <div class="image">
+                                <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                            </div>
+                            <span>
+                                شریف حسنی
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="answers">
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                        <li class="answer shadow">
+                            <div class="answer-header">
+                                <ul class="answer-items">
+                                    <li class="item">12/10/1399</li>
+                                    <li class="item">10 بازدید</li>
+                                    <li class="item">5 پاسخ</li>
+                                </ul>
+                            </div>
+                            <div class="answer-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et ipsum explicabo aliquid itaque! Deleniti fuga accusantium laudantium aut, quae numquam minus modi atque. Vel sit sequi officiis esse ex consectetur
+                                    nesciunt. Minima praesentium quasi nam quia corrupti perferendis excepturi eum, similique accusantium ullam explicabo eius, nobis nemo doloremque a!</p>
+                            </div>
+                            <div class="answer-footer">
+                                <div class="image">
+                                    <img src="images/comment-image.jpg" alt="" class="img-thumbnail img-fluid">
+                                </div>
+                                <span>
+                                    شریف حسنی
+                                </span>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">بازگشت</button>
+                    <button type="button" class="btn btn-success">ثبت پاسخ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- custom js  -->
+    <script src="js/index.js"></script>
+
+    <!-- Bootstrap js and Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
